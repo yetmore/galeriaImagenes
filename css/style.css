@@ -1,0 +1,88 @@
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #970097c7;
+  --second-color: #222;
+  --main-modal-color: rgba(247, 222, 30, 0.85);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --container-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ******Header******* */
+.header {
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo {
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px;
+  margin: 10px;
+}
+
+.section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  text-align: center;
+  background-color: #e0fbfe;
+}
